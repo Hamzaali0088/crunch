@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #f9b406;
+  --color-primary-dark: #e0a305;
+}
+
+@font-face {
+  font-family: 'Dirty Brush';
+  src: url('/font/dirty_brush/Dirty Brush.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-dirty-brush {
+  font-family: 'Dirty Brush', cursive;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.hover-bg-primary-dark:hover {
+  background-color: var(--color-primary-dark);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar.scrolled {
+  background-color: #242424;
+}
+
+@keyframes banner-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner-slider-track {
+  animation: banner-slide 18s linear infinite;
+}
