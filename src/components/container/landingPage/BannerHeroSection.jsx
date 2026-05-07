@@ -39,10 +39,10 @@ function BannerHeroSection() {
           className="h-full w-full object-cover lg:object-center"
         />
       </div>
-        <Container className="flex min-h-[600x] z-20 lg:min-h-[900px] flex-col pt-3 md:px-10">
+        <Container className="flex min-h-[600x] z-20 lg:min-h-[680px] flex-col pt-3 md:px-10">
           <Navbar />
 
-          <div className="mt-24 lg:mt-[240px] max-w-5xl z-20">
+          <div className="pt-10 max-w-5xl z-20">
             <h1 className="font-bebas text-[64px] leading-[0.92] tracking-[-0.04em] shrink-4 text-white uppercase md:text-[130px]">
               Finally,
               <br />

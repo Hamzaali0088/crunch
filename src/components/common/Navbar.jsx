@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <>
-      <div className={`fixed top-5 left-0 z-50 w-full transition-all duration-300 px-4 ${hasScrolled ? '' : 'pt-5! lg:top-18!'}`}>
+      <div className={`fixed top-5 left-0 z-50 w-full transition-all duration-300 px-4 ${hasScrolled ? '' : ''}`}>
         <Container>
           <div
             className={`navbar rounded-[40px] bg-white/10 p-[5px] sm:p-[10px] transition-colors duration-300 lg:p-[16px] xl:p-[18px] xl:px-[20px] ${hasScrolled ? 'scrolled' : ''
