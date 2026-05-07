@@ -100,7 +100,7 @@ function ContactCtaSection() {
   ]
 
   return (
-    <section className="bg-[#101010]">
+    <section id="contact-cta" className="bg-[#101010]">
       <FullContainer>
         <Container className="grid gap-8 md:grid-cols-[0.95fr_1.25fr]">
           <div className="">

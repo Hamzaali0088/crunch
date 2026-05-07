@@ -64,3 +64,39 @@ html {
 .banner-slider-track {
   animation: banner-slide 18s linear infinite;
 }
+
+@media (min-width: 1024px) {
+  #why-us{
+    scroll-margin-top: 100px;
+  }
+  #how-we-work{
+    scroll-margin-top: 100px;
+  }
+  #recipes{
+    scroll-margin-top: 100px;
+  }
+  #who-we-are{
+    scroll-margin-top: 100px;
+  }
+  #contact-cta {
+    scroll-margin-top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #why-us{
+    scroll-margin-top: 40px;
+  }
+  #how-we-work{
+    scroll-margin-top: 40px;
+  }
+  #recipes{
+    scroll-margin-top: 40px;
+  }
+  #who-we-are{
+    scroll-margin-top: 40px;
+  }
+  #contact-cta{
+    scroll-margin-top: 40px;
+  }
+}

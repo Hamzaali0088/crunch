@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import Container from './container'
 
 function Navbar() {
@@ -31,14 +30,14 @@ function Navbar() {
 
   return (
     <>
-      <div className={`fixed top-5 lg:top-18 left-0 z-50 w-full px-4 ${hasScrolled ? 'pt-5!' : ''}`}>
+      <div className={`fixed top-5 left-0 z-50 w-full transition-all duration-300 px-4 ${hasScrolled ? '' : 'pt-5! lg:top-18!'}`}>
         <Container>
           <div
-            className={`navbar rounded-[40px] bg-white/10 p-[10px] transition-colors duration-300 lg:p-[16px] xl:p-[18px] xl:px-[20px] ${hasScrolled ? 'scrolled' : ''
+            className={`navbar rounded-[40px] bg-white/10 p-[5px] sm:p-[10px] transition-colors duration-300 lg:p-[16px] xl:p-[18px] xl:px-[20px] ${hasScrolled ? 'scrolled' : ''
               }`}
           >
-            <div className="flex items-center justify-between gap-4  px-4 py-2">
-              <img src="/st-images/logo.png" alt="Brand logo" className="h-[44px] lg:h-[56px] xl:h-[74px] w-auto" />
+            <div className="flex items-center justify-between gap-4 px-4 py-1 sm:py-2">
+              <img src="/st-images/logo.png" alt="Brand logo" className="h-[30px] sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[74px] w-auto" />
               <div className="font-inter hidden items-center gap-6 text-[15px] font-light uppercase text-slate-200 md:flex">
                 {navLinks.map((link) => (
                   <a key={link.href} href={link.href} className="hover:text-primary">
@@ -46,16 +45,16 @@ function Navbar() {
                   </a>
                 ))}
               </div>
-              <Link
-                to="/story"
+              <a
+                href="#contact-cta"
                 className="font-inter hidden bg-primary hover-bg-primary-dark rounded-full px-4 lg:px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black md:inline-flex"
               >
                 Work With Us
-              </Link>
+              </a>
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/40 text-white md:hidden"
+                className="inline-flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/40 text-white md:hidden"
                 aria-label="Open menu"
               >
                 <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
@@ -103,13 +102,13 @@ function Navbar() {
               </a>
             ))}
           </nav>
-          <Link
-            to="/story"
+          <a
+            href="#contact-cta"
             onClick={() => setIsMobileMenuOpen(false)}
             className="font-inter mt-7 w-fit inline-flex rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase text-black"
           >
             Work With Us
-          </Link>
+          </a>
         </div>
 
 

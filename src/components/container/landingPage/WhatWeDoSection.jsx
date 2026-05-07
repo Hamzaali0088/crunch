@@ -35,7 +35,7 @@ function WhatWeDoSection() {
       <FullContainer className="relative">
         <Container className="max-w-7xl">
           <div className="text-center">
-            <span className="inline-flex rounded-full border border-amber-400/40 bg-black/60 px-4 py-1 text-xs font-semibold text-amber-300">
+            <span className="inline-flex font-inter rounded-full backdrop-blur-sm bg-white/10 border-t-[0.5px] border-l-[0.5px] border-white/70 py-2 px-4 text-xs lg:text-[16px] font-light capitalize  text-amber-300">
               What We Do
             </span>
             <h2 className="mt-4 font-bebas text-[45px] font-normal leading-[1.2] text-white uppercase md:text-[72px]">
