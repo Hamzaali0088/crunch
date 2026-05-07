@@ -58,7 +58,7 @@ function ProteinMethodSection() {
             </p>
 
             <div className="relative mt-10 overflow-hidden rounded-3xl p-5 lg:py-8 lg:px-16 lg:pb-20 text-black">
-              <div className='absolute top-0 right-0 border-21 h-22 w-22 flex items-center justify-center rounded-full border-black bg-primary p-[0.3px]'>
+              <div className='absolute z-10 top-0 right-0 border-21 h-22 w-22 flex items-center justify-center rounded-full border-black bg-primary p-[0.3px]'>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25 18.667C24.9998 19.2191 24.5522 19.667 24 19.667C23.4478 19.667 23.0002 19.2191 23 18.667V10.4141L8.70702 24.707C8.31649 25.0976 7.68348 25.0976 7.29295 24.707C6.90243 24.3165 6.90243 23.6835 7.29295 23.293L21.5859 9H13.333C12.7809 8.99982 12.333 8.55218 12.333 8C12.333 7.44782 12.7809 7.00018 13.333 7H24C24.5523 7 25 7.44772 25 8V18.667Z" fill="black" />
                 </svg>

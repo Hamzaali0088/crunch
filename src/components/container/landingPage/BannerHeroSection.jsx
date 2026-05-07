@@ -56,12 +56,18 @@ function BannerHeroSection() {
               crafting protein people actually crave.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <button className="font-inter bg-primary hover-bg-primary-dark rounded-full px-6 py-2 text-[16px] font-medium uppercase text-black">
+              <a
+                href="#contact-cta"
+                className=" font-inter mt-7 w-fit inline-flex rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase text-black"
+              >
                 Work With Us
-              </button>
-              <button className="font-inter hover-bg-primary-dark rounded-full border border-white bg-black px-6 py-2 text-[16px] font-medium uppercase text-white">
+              </a>
+              <a
+                href="#why-us"
+                className="font-inter mt-7 w-fit inline-flex rounded-full border border-white bg-black px-6 py-3 text-xs font-semibold uppercase text-white"
+              >
                 Why Us
-              </button>
+              </a>
             </div>
           </div>
         </Container>
