@@ -22,7 +22,7 @@ function OurTeamSection() {
       role: 'COO and Partnerships',
       headline: 'Global Business Development Consultant',
       bio: 'A strategic leader with years of experience in global expansion and scaling operations from early stage to growth. Focused on building sustainable systems for long-term success.',
-      image: '/st-images/member3.png',
+      image: '/st-images/member3.jpg',
     },
   ]
 

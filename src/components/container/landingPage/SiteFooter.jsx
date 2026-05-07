@@ -7,7 +7,9 @@ function SiteFooter() {
       <FullContainer>
         <Container className="grid gap-10 md:grid-cols-2 lg:gap-20">
           <div>
+            <a href="/">
             <img src="/st-images/logo.png" alt="Forever Protein logo" className="h-16 lg:h-[86px] w-auto" />
+            </a>
             <div className="mt-5  max-w-[600px] font-inter text-[14px] lg:text-[16px] font-light leading-relaxed text-[#cdd4dd] grid gap-5 md:gap-10 md:grid-cols-2">
               <p>
                 Forever Protein

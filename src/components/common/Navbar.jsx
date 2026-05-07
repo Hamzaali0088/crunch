@@ -37,7 +37,9 @@ function Navbar() {
               }`}
           >
             <div className="flex items-center justify-between gap-4 px-4 py-1 sm:py-2">
-              <img src="/st-images/logo.png" alt="Brand logo" className="h-[30px] sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[74px] w-auto" />
+              <a href="/" aria-label="Go to home">
+                <img src="/st-images/logo.png" alt="Brand logo" className="h-[30px] sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[74px] w-auto" />
+              </a>
               <div className="font-inter hidden items-center gap-6 text-[15px] font-light uppercase text-slate-200 md:flex">
                 {navLinks.map((link) => (
                   <a key={link.href} href={link.href} className="hover:text-primary">
@@ -78,7 +80,9 @@ function Navbar() {
         <div className=''>
 
           <div className="mb-8 flex items-center justify-between">
-            <img src="/st-images/logo.png" alt="Brand logo" className="h-12 w-auto" />
+            <a href="#" aria-label="Go to home" onClick={() => setIsMobileMenuOpen(false)}>
+              <img src="/st-images/logo.png" alt="Brand logo" className="h-12 w-auto" />
+            </a>
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
