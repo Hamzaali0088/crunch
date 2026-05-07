@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import FullContainer from '../../common/FullContainer'
 import Container from '../../common/container'
+import CountryCodePicker from '../../common/CountryCodePicker'
 
 const iconClassName = 'h-4 w-4 text-amber-400'
 
@@ -67,14 +68,6 @@ function ClockIcon() {
 
 function ContactCtaSection() {
   const [countryCode, setCountryCode] = useState('+1')
-
-  const countryCodeOptions = [
-    { code: '+1', label: 'US/CA' },
-    { code: '+44', label: 'UK' },
-    { code: '+61', label: 'AU' },
-    { code: '+91', label: 'IN' },
-    { code: '+971', label: 'UAE' },
-  ]
 
   const infoCards = [
     {
@@ -151,20 +144,20 @@ function ContactCtaSection() {
             </div>
           </div>
 
-          <div className="rounded-3xl border-t-[8px] border-x border-amber-400 bg-white p-5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] md:p-7">
+          <div className="rounded-3xl border-t-8 border-x border-amber-400 bg-white p-5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] md:p-7">
             <form className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="text-sm font-semibold text-slate-900">
                   First Name
                   <input
-                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-amber-400 focus:ring-1"
                     placeholder="Enter first name"
                   />
                 </label>
                 <label className="text-sm font-semibold text-slate-900">
                   Last Name
                   <input
-                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-amber-400 focus:ring-1"
                     placeholder="Enter last name"
                   />
                 </label>
@@ -174,27 +167,20 @@ function ContactCtaSection() {
                 <label className="text-sm font-semibold text-slate-900">
                   Work Email
                   <input
-                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-amber-400 focus:ring-1"
                     placeholder="Enter work email"
                   />
                 </label>
                 <label className="text-sm font-semibold text-slate-900">
                   Phone Number
                   <div className="mt-1 flex w-full overflow-hidden rounded-lg border border-slate-200 ring-amber-400 focus-within:ring-1">
-                    <select
+                    <CountryCodePicker
                       value={countryCode}
-                      onChange={(event) => setCountryCode(event.target.value)}
-                      className="w-[95px] border-r border-slate-200 bg-slate-50 px-2 py-2 text-sm font-medium text-slate-900 outline-none"
-                      aria-label="Country code"
-                    >
-                      {countryCodeOptions.map((option) => (
-                        <option key={option.code} value={option.code}>
-                          {option.code} {option.label}
-                        </option>
-                      ))}
-                    </select>
+                      onChange={setCountryCode}
+                      className="w-[150px] border-r border-slate-200 px-2 py-2 text-sm font-medium text-slate-900 outline-none"
+                    />
                     <input
-                      className="w-full px-3 py-2 text-sm text-slate-900 outline-none"
+                      className="w-full px-3 py-2 text-sm font-light text-slate-900 outline-none "
                       placeholder="Enter phone number"
                       type="tel"
                     />
@@ -206,14 +192,14 @@ function ContactCtaSection() {
                 <label className="text-sm font-semibold text-slate-900">
                   Job Title
                   <input
-                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-primary focus:ring-1"
                     placeholder="Enter job title"
                   />
                 </label>
                 <label className="text-sm font-semibold text-slate-900">
                   Company Name
                   <input
-                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                    className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-primary focus:ring-1"
                     placeholder="Enter company name"
                   />
                 </label>
@@ -223,14 +209,14 @@ function ContactCtaSection() {
                 Message
                 <textarea
                   rows={4}
-                  className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none ring-amber-400 focus:ring-1"
+                  className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-light outline-none ring-primary focus:ring-1"
                   placeholder="Enter message"
                 />
               </label>
 
               <button
                 type="button"
-                className="w-full rounded-lg bg-amber-400 px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-black transition hover:bg-amber-300"
+                className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-white transition hover:bg-amber-300"
               >
                 Submit
               </button>

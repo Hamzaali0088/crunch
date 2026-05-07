@@ -29,19 +29,20 @@ function BannerHeroSection() {
 
   return (
     <section className="relative overflow-hidden">
+     
+
+      <FullContainer className="relative px-0 py-0">
       <div className="absolute inset-0">
         <img
           src="/st-images/banner.png"
           alt="Industrial protein production background"
-          className="h-full w-full object-cover object-bottom"
+          className="h-full w-full object-cover lg:object-center"
         />
       </div>
-
-      <FullContainer className="relative px-0 py-0">
-        <Container className="flex min-h-[600x] lg:min-h-[900px] flex-col pt-3 md:px-10">
+        <Container className="flex min-h-[600x] z-20 lg:min-h-[900px] flex-col pt-3 md:px-10">
           <Navbar />
 
-          <div className="mt-24 lg:mt-[240px] max-w-5xl">
+          <div className="mt-24 lg:mt-[240px] max-w-5xl z-20">
             <h1 className="font-bebas text-[64px] leading-[0.92] tracking-[-0.04em] shrink-4 text-white uppercase md:text-[130px]">
               Finally,
               <br />
@@ -58,13 +59,13 @@ function BannerHeroSection() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#contact-cta"
-                className=" font-inter mt-7 w-fit inline-flex rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase text-black"
+                className=" font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
               >
                 Work With Us
               </a>
               <a
                 href="#why-us"
-                className="font-inter mt-7 w-fit inline-flex rounded-full border border-white bg-black px-6 py-3 text-xs font-semibold uppercase text-white"
+                className="font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full border border-white bg-black px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-white"
               >
                 Why Us
               </a>

@@ -105,7 +105,7 @@ function Navbar() {
           <a
             href="#contact-cta"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="font-inter mt-7 w-fit inline-flex rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase text-black"
+            className="font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
           >
             Work With Us
           </a>
