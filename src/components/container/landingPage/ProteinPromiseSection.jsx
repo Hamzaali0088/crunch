@@ -1,6 +1,6 @@
 import { useId } from 'react'
 import FullContainer from '../../common/FullContainer'
-import Container from '../../common/container'
+import Container from '../../common/Container'
 
 /** Figma export: dual-feature frosted panel (~498×187), notch faces toward center on the right */
 const FEATURE_PANEL_PATH_D =

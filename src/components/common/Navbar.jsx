@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Container from './container'
+import Container from './Container'
 
 function Navbar() {
   const [hasScrolled, setHasScrolled] = useState(false)

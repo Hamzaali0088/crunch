@@ -1,6 +1,6 @@
 import '@fontsource/bebas-neue/400.css'
 import FullContainer from '../../common/FullContainer'
-import Container from '../../common/container'
+import Container from '../../common/Container'
 import Navbar from '../../common/Navbar'
 
 function BannerHeroSection() {

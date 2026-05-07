@@ -1,5 +1,5 @@
 import FullContainer from '../../common/FullContainer'
-import Container from '../../common/container'
+import Container from '../../common/Container'
 
 function OurTeamSection() {
   const members = [

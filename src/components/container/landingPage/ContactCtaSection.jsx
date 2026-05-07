@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import FullContainer from '../../common/FullContainer'
-import Container from '../../common/container'
+import Container from '../../common/Container'
 import CountryCodePicker from '../../common/CountryCodePicker'
 
 const iconClassName = 'h-4 w-4 text-amber-400'
