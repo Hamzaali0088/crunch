@@ -76,9 +76,9 @@ function BannerHeroSection() {
               </div>
             </div>
             <div className=' hidden lg:block'>
-              <img src="/st-images/bannerSideImage.png" alt="Banner" className="w-full h-auto object-contain max-w-xl absolute right-0 bottom-0 z-10" />
+              <img src="/st-images/bannerSideImage.png" alt="Banner" className="w-full h-auto object-contain max-w-xl xl:max-w-2xl absolute right-0 bottom-0 z-10" />
             </div>
-            <div className=' block lg:hidden border border-red-500'>
+            <div className=' block lg:hidden '>
               <img src="/st-images/bannerSideImage.png" alt="Banner" className="w-full h-auto object-contain " />
             </div>
           </div>
