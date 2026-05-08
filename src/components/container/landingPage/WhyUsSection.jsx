@@ -21,7 +21,7 @@ function WhyUsSection() {
   ]
 
   return (
-    <section id="why-us" className="relative overflow-hidden bg-[#040404]">
+    <section id="why-us" className="relative overflow-hidden bg-[#040404] z-10">
       <FullContainer className="relative">
         <div className='absolute z-0 inset-0 '>
           <svg width="1741" height="1386" viewBox="0 0 1741 1386" fill="none" xmlns="http://www.w3.org/2000/svg">
