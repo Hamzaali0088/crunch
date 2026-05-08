@@ -36,7 +36,7 @@ function Navbar() {
             className={`navbar rounded-[40px] bg-white/10 p-[5px] sm:p-[10px] transition-colors duration-300 lg:p-[16px] xl:p-[18px] xl:px-[20px] ${hasScrolled ? 'scrolled' : ''
               }`}
           >
-            <div className="flex items-center justify-between gap-4 px-4 py-1 sm:py-2">
+            <div className="flex items-center justify-between flex-row gap-4 px-4 py-1 sm:py-2">
               <a href="/" aria-label="Go to home">
                 <img src="/st-images/logo.png" alt="Brand logo" className="h-[30px] sm:h-[40px] md:h-[50px] lg:h-[60px] xl:h-[74px] w-auto" />
               </a>
@@ -49,7 +49,7 @@ function Navbar() {
               </div>
               <a
                 href="#contact-cta"
-                className="font-inter hidden bg-primary hover-bg-primary-dark rounded-full px-4 lg:px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black md:inline-flex"
+                className="font-inter w-fit hidden lg:inline-flex text-center flex-col items-center justify-center rounded-full bg-primary hover:bg-black! transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
               >
                 Work With Us
               </a>

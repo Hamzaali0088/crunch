@@ -31,18 +31,18 @@ function BannerHeroSection() {
     <section className="relative overflow-hidden">
      
 
-      <FullContainer className="relative px-0 py-0">
+      <FullContainer className="relative px-0 py-0 lg:pb-6! lg:mb-10">
       <div className="absolute inset-0">
         <img
           src="/st-images/banner.png"
           alt="Industrial protein production background"
-          className="h-full w-full object-cover lg:object-center"
+          className="h-full w-full object-cover lg:object-bottom"
         />
       </div>
-        <Container className="flex min-h-[600x] z-20 lg:min-h-[680px] flex-col pt-3 md:px-10">
+        <Container className="flex min-h-[600x] z-20 lg:min-h-[600px] flex-col pt-3 md:px-10  ">
           <Navbar />
 
-          <div className="pt-10 max-w-5xl z-20">
+          <div className="pt-10 max-w-5xl z-20 ">
             <h1 className="font-bebas text-[64px] leading-[0.92] tracking-[-0.04em] shrink-4 text-white uppercase md:text-[130px]">
               Finally,
               <br />
@@ -56,17 +56,18 @@ function BannerHeroSection() {
               Most protein products forget the experience. We put taste first
               crafting protein people actually crave.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-4 lg:mt-8 flex flex-wrap gap-3">
               <a
                 href="#contact-cta"
-                className=" font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
+                className=" font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary hover:bg-black! transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
               >
                 Work With Us
               </a>
               <a
                 href="#why-us"
-                className="font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full border border-white bg-black px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-white"
+                className="font-inter mt-7 w-fit inline-flex flex-col items-center justify-center rounded-full border border-white bg-black px-6 py-2 text-center text-xs font-medium uppercase text-white transition-all duration-300 hover:bg-[#f9b406] hover:text-black hover:border-[#f9b406] lg:text-[16px]"
               >
+             
                 Why Us
               </a>
             </div>
@@ -75,7 +76,7 @@ function BannerHeroSection() {
       </FullContainer>
 
       <div className="bg-primary relative lg:hidden">
-        <FullContainer className="px-0! py-7!">
+        <FullContainer className="px-0! py-4!">
           <Container className="lg:my-4 overflow-hidden px-6 md:px-10 ">
             <div className="banner-slider-track flex w-max items-center gap-10">
               {[...featureItems, ...featureItems].map((item, index) => (
@@ -84,14 +85,14 @@ function BannerHeroSection() {
                     <img
                       src={item.iconPath}
                       alt={item.heading}
-                      className="h-10 w-10 object-contain"
+                      className="h-6 w-6 object-contain"
                     />
                   </span>
                   <div className="font-inter uppercase leading-tight text-black">
-                    <p className="text-[17px] font-medium tracking-[0.02em]">
+                    <p className="text-[12px] font-medium tracking-[0.02em]">
                       {item.heading}
                     </p>
-                    <p className="text-[14px] font-medium tracking-[0.02em]">
+                    <p className="text-[9px] font-medium tracking-[0.02em]">
                       {item.description}
                     </p>
                   </div>

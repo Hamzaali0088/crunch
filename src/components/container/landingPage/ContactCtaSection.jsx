@@ -216,7 +216,7 @@ function ContactCtaSection() {
 
               <button
                 type="button"
-                className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-white transition hover:bg-amber-300"
+                className="w-full rounded-lg hover:bg-black! cursor-pointer transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border bg-primary px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-white"
               >
                 Submit
               </button>

@@ -57,7 +57,7 @@ function SloganSection() {
 
             <a
               href="#contact-cta"
-              className="font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
+              className="font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary hover:bg-black! transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
             >
               Work With Us
             </a>
