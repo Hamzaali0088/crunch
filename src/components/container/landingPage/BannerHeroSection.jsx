@@ -29,47 +29,57 @@ function BannerHeroSection() {
 
   return (
     <section className="relative overflow-hidden">
-     
 
-      <FullContainer className="relative px-0 py-0 lg:pb-6! lg:mb-10">
-      <div className="absolute inset-0">
-        <img
-          src="/st-images/banner.png"
-          alt="Industrial protein production background"
-          className="h-full w-full object-cover lg:object-bottom"
-        />
-      </div>
-        <Container className="flex min-h-[600x] z-20 lg:min-h-[600px] flex-col pt-3 md:px-10  ">
+
+      <FullContainer className="relative px-0 py-0 lg:pb-10!">
+        <div className="absolute inset-0">
+          <img
+            src="/st-images/banner.png"
+            alt="Industrial protein production background"
+            className="h-full w-full object-cover lg:object-bottom"
+          />
+        </div>
+        <div className='absolute inset-0 bg-black/50'></div>
+
+        <Container className="flex min-h-[600x] z-20 lg:min-h-[600px] flex-col pt-3 relative ">
           <Navbar />
 
-          <div className="pt-10 max-w-5xl z-20 ">
-            <h1 className="font-bebas text-[64px] leading-[0.92] tracking-[-0.04em] shrink-4 text-white uppercase md:text-[130px]">
-              Finally,
-              <br />
-              Protein worth
-              <br />
-              <span className="font-dirty-brush text-primary text-[70px] md:text-[144px]">
-                craving
-              </span>
-            </h1>
-            <p className="mt-3 max-w-2xl text-[20px] leading-tight text-slate-100 md:text-[40px] font-inter font-light">
-              Most protein products forget the experience. We put taste first
-              crafting protein people actually crave.
-            </p>
-            <div className="mt-4 lg:mt-8 flex flex-wrap gap-3">
-              <a
-                href="#contact-cta"
-                className=" font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary hover:bg-black! transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
-              >
-                Work With Us
-              </a>
-              <a
-                href="#why-us"
-                className="font-inter mt-7 w-fit inline-flex flex-col items-center justify-center rounded-full border border-white bg-black px-6 py-2 text-center text-xs font-medium uppercase text-white transition-all duration-300 hover:bg-[#f9b406] hover:text-black hover:border-[#f9b406] lg:text-[16px]"
-              >
-             
-                Why Us
-              </a>
+          <div className="pt-10 max-w-5xl flex flex-col lg:flex-row z-20 items-center">
+            <div className='relative z-20'>
+              <h1 className="font-bebas text-[64px] leading-[0.92] tracking-[-0.04em] shrink-4 text-white uppercase md:text-[130px]">
+                Finally,
+                <br />
+                Protein worth
+                <br />
+                <span className="font-dirty-brush text-primary text-[70px] md:text-[144px]">
+                  craving
+                </span>
+              </h1>
+              <p className="mt-3 max-w-2xl text-[20px] leading-tight text-slate-100 md:text-[40px] font-inter font-light">
+                Most protein products forget the experience. We put taste first
+                crafting protein people actually crave.
+              </p>
+              <div className="mt-4 lg:mt-8 flex flex-wrap gap-3">
+                <a
+                  href="#contact-cta"
+                  className=" font-inter mt-7 w-fit inline-flex text-center flex-col items-center justify-center rounded-full bg-primary hover:bg-black! transition-all duration-300 hover:text-white border border-primary hover:border-white! hover:border px-6 py-2 text-xs lg:text-[16px] font-medium uppercase text-black"
+                >
+                  Work With Us
+                </a>
+                <a
+                  href="#why-us"
+                  className="font-inter mt-7 w-fit inline-flex flex-col items-center justify-center rounded-full border border-white bg-black px-6 py-2 text-center text-xs font-medium uppercase text-white transition-all duration-300 hover:bg-[#f9b406] hover:text-black hover:border-[#f9b406] lg:text-[16px]"
+                >
+
+                  Why Us
+                </a>
+              </div>
+            </div>
+            <div className=' hidden lg:block'>
+              <img src="/st-images/bannerSideImage.png" alt="Banner" className="w-full h-auto object-contain max-w-xl absolute right-0 bottom-0 z-10" />
+            </div>
+            <div className=' block lg:hidden border border-red-500'>
+              <img src="/st-images/bannerSideImage.png" alt="Banner" className="w-full h-auto object-contain " />
             </div>
           </div>
         </Container>
